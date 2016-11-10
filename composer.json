@@ -3,7 +3,6 @@
     "description": "A collection of Base and Abstract classes etc used to speed up development.",
     "type": "symfony-bundle",
     "license": "MIT",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Carl Owens",
@@ -42,5 +41,5 @@
             "Partfire\\CommonBundle\\Tests\\": "Tests/",
             "Partfire\\CommonBundle\\spec\\": "spec/"
         }
-    },
+    }
 }
