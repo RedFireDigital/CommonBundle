@@ -1,0 +1,3 @@
+#partfire_common_homepage:
+#    path:     /
+#    defaults: { _controller: PartfireCommonBundle:Default:index }

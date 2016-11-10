@@ -1,0 +1,4 @@
+services:
+#    partfire_common.example:
+#        class: Partfire\CommonBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
