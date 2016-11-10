@@ -10,7 +10,7 @@ Add the following to your composer.json file:
     "repositories": [
             {
                 "type": "vcs",
-                "url": "git@github.com:PartFire/CommonBundle.git"
+                "url": "https://github.com/PartFire/CommonBundle"
             }
         ]
 Then you can run:
