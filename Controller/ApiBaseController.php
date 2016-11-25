@@ -1,6 +1,6 @@
 <?php
 
-namespace Partfire\CommonBundle\Controller;
+namespace PartFire\CommonBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 

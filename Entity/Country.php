@@ -9,7 +9,7 @@
  * File:    Country.php
  **/
 
-namespace Partfire\CommonBundle\Entity;
+namespace PartFire\CommonBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\MappedSuperclass;
@@ -22,7 +22,7 @@ use JMS\Serializer\Annotation\Expose;
  * @ORM\Entity
  * @ORM\Table(name="partfire_country", indexes={
  *  @ORM\Index(name="index_enabled", columns={"enabled", "deleted"}) })
- * @ORM\Entity(repositoryClass="Partfire\CommonBundle\Entity\Repository\CountryRepository")
+ * @ORM\Entity(repositoryClass="PartFire\CommonBundle\Entity\Repository\CountryRepository")
  * @ExclusionPolicy("all")
  */
 

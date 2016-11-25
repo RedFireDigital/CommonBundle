@@ -1,6 +1,6 @@
 <?php
 
-namespace Partfire\CommonBundle\Tests\Controller;
+namespace PartFire\CommonBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

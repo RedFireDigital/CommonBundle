@@ -1,6 +1,10 @@
 services:
+    partfire_common.repo:
+        class: PartFire\CommonBundle\Entity\Repository\RepositoryFactory
+        arguments: ['@doctrine.orm.default_entity_manager']
+
     partfire_common.country_repository:
         class: Doctrine\ORM\EntityRepository
         factory: ['@doctrine.orm.default_entity_manager', getRepository]
         arguments:
-            - Partfire\CommonBundle\Entity\Country
+            - PartFire\CommonBundle\Entity\Country
