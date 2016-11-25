@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\Partfire\CommonBundle\Entity;
+namespace spec\PartFire\CommonBundle\Entity;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -9,7 +9,7 @@ class CommonBaseEntitySpec extends ObjectBehavior
 {
     public function it_is_initializable()
     {
-        $this->shouldHaveType('Partfire\CommonBundle\Entity\CommonBaseEntity');
+        $this->shouldHaveType('PartFire\CommonBundle\Entity\CommonBaseEntity');
     }
 
     public function it_should_generate_a_hash_of_length_twenty()

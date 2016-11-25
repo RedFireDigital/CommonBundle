@@ -10,11 +10,9 @@
  * File:    CountryRepository.php
  **/
 
-namespace Partfire\CommonBundle\Entity\Repository;
+namespace PartFire\CommonBundle\Entity\Repository;
 
-use Doctrine\ORM\EntityRepository;
-
-class CountryRepository extends EntityRepository
+class CountryRepository extends CommonRepository
 {
 
 }
