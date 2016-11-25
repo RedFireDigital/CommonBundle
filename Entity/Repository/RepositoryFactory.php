@@ -16,7 +16,7 @@ namespace PartFire\CommonBundle\Entity\Repository;
 
 use Doctrine\ORM\EntityManager;
 
-abstract class RepositoryFactory implements Repository
+class RepositoryFactory implements Repository
 {
     
     protected $em;
@@ -30,8 +30,15 @@ abstract class RepositoryFactory implements Repository
         $this->repository = array();
     }
     
-    abstract function getBundleName();
-    abstract function getEntityManagerName();
+    public function getBundleName()
+    {
+        return $this->bundleName;
+    }
+    
+    public function getEntityManagerName()
+    {
+        return $this->entityManagerName;
+    }
     
     public function __call($name, $arguments)
     {
