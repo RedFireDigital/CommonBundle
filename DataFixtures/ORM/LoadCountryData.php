@@ -1,11 +1,11 @@
 <?php
-namespace Partfire\CommonBundle\DataFixtures\ORM;
+namespace PartFire\CommonBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\AbstractFixture;
-use Partfire\CommonBundle\Data\CountryData;
-use Partfire\CommonBundle\Entity\Country;
+use PartFire\CommonBundle\Data\CountryData;
+use PartFire\CommonBundle\Entity\Country;
 
 /**
  * Default country fixtures.

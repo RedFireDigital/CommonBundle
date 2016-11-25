@@ -10,7 +10,7 @@
  * File:    CountryData.php
  **/
 
-namespace Partfire\CommonBundle\Data;
+namespace PartFire\CommonBundle\Data;
 
 
 class CountryData

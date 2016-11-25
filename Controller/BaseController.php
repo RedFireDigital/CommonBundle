@@ -1,6 +1,6 @@
 <?php
 
-namespace Partfire\CommonBundle\Controller;
+namespace PartFire\CommonBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;

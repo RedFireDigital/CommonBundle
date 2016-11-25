@@ -9,7 +9,7 @@
  * File:    CommonBaseEntity.php
  **/
 
-namespace Partfire\CommonBundle\Entity;
+namespace PartFire\CommonBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;

@@ -12,7 +12,7 @@
  *
  **/
 
-namespace Partfire\CommonBundle\Entity\Repository;
+namespace PartFire\CommonBundle\Entity\Repository;
 
 
 interface Repository

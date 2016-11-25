@@ -29,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Partfire\\CommonBundle\\": ""
+            "PartFire\\CommonBundle\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/",
@@ -38,8 +38,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Partfire\\CommonBundle\\Tests\\": "Tests/",
-            "Partfire\\CommonBundle\\spec\\": "spec/"
+            "PartFire\\CommonBundle\\Tests\\": "Tests/",
+            "PartFire\\CommonBundle\\spec\\": "spec/"
         }
     }
 }
