@@ -16,82 +16,17 @@ namespace PartFire\CommonBundle\Entity\Repository;
 
 use Doctrine\ORM\EntityManager;
 
-abstract class RepositoryFactory implements Repository
+class RepositoryFactory extends RepositoryBaseFactory  implements Repository
 {
+    public $bundleName = "PartFireCommonBundle";
     
-    protected $em;
-    protected $repository;
-    
-    public $entityManagerName  = 'default';
-    
-    public function __construct(EntityManager $em)
+    public function getBundleName()
     {
-        $this->em = $em;
-        $this->repository = array();
+        return $this->bundleName;
     }
     
-    abstract function getBundleName();
-    abstract function getEntityManagerName();
-    
-    public function __call($name, $arguments)
+    public function getEntityManagerName()
     {
-        $prop = $this->_getPropertyFromMethodName($name);
-        try {
-            try {
-                $repo = $this->em->getRepository($this->getBundleName() . ':' . $prop);
-            } catch (\Exception $e) {
-                throw new \ErrorException('Can not find repo ' .$prop . ' in bundle ' . $this->getBundleName() . ' ( ' . $this->getBundleName() . ':' . $prop . ' ) on ' . get_class($this) . " --> " . $e->getMessage());
-            }
-            
-            
-            return $repo;
-        } catch (\Exception $e) {
-            throw new \Exception($e->getMessage());
-        }
-    }
-    
-    /**
-     *
-     * @param string $methodName
-     * @return string
-     */
-    protected function _getPropertyFromMethodName($methodName)
-    {
-        $prop = substr($methodName, 3); // strip get/set
-        return $prop;
-    }
-    
-    public function persist($entity)
-    {
-        $this->em->persist($entity);
-    }
-    
-    public function save()
-    {
-        $this->em->flush();
-    }
-    
-    public function remove($entity){
-        $this->em->remove($entity);
-    }
-    
-    public function removeAndSave($entity)
-    {
-        $this->em->remove($entity);
-        $this->save();
-    }
-    
-    public function saveAndGetEntity($entity)
-    {
-        $this->persist($entity);
-        $this->save();
-        
-        return $this->refresh($entity);
-    }
-    
-    public function refresh($entity)
-    {
-        $this->em->refresh($entity);
-        return $entity;
+        return $this->entityManagerName;
     }
 }
