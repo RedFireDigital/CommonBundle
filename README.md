@@ -3,6 +3,12 @@ TODO
 
 Write this documentation about configuring Gedmo, and what can be used.
 
+What this does
+------------
+Coming soon...
+
+
+
 Installation
 ------------
 Add the following to your composer.json file:
