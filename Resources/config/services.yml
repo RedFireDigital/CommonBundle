@@ -8,3 +8,9 @@ services:
         factory: ['@doctrine.orm.default_entity_manager', getRepository]
         arguments:
             - PartFire\CommonBundle\Entity\Country
+
+    partfire_common.output_burn:
+        class: PartFire\CommonBundle\Services\Output\Cli\BurnOutput
+
+    partfire_common.output_console:
+        class: PartFire\CommonBundle\Services\Output\Cli\ConsoleOutput
