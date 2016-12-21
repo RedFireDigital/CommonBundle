@@ -184,7 +184,7 @@ class CommonBaseEntity
 
     public function __toString()
     {
-        return $this->getId();
+        return "" . $this->getId();
     }
 
     public function sluggify($url)
