@@ -52,7 +52,8 @@ class ConsoleOutput implements CommonOutputInterface
 
     public function error($string)
     {
-        $this->output->writeln('<error>' . $string . '</error>');
+        //$this->output->writeln('<error>' . $string . '</error>');
+        $this->output->writeln('<fg=red;options=bold>' . $string . '</fg=red;options=bold>');
         $this->writeToLog($string);
     }
 

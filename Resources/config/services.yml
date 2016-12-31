@@ -14,3 +14,10 @@ services:
 
     partfire_common.output_console:
         class: PartFire\CommonBundle\Services\Output\Cli\ConsoleOutput
+
+    partfire_common.time_ago:
+        class: PartFire\CommonBundle\Services\DateTime\TimeAgo
+
+    partfire_common.date_time_service:
+        class: PartFire\CommonBundle\Services\DateTime\DateTimeService
+        arguments: ['@partfire_common.time_ago']
