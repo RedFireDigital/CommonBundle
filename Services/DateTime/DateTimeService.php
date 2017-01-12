@@ -26,8 +26,7 @@ class DateTimeService
 
     public function getNiceTime(\DateTime $dateTime)
     {
-        return $dateTime->format('l jS \of F Y G:i:s');
-
+        return $dateTime->format('D jS \of F Y G:i:s');
     }
 
     public function getNiceDateNow()
@@ -42,7 +41,7 @@ class DateTimeService
 
     public function getNiceDate(\DateTime $dateTime)
     {
-        return $dateTime->format('l, jS F, Y');
+        return $dateTime->format('D, jS M, Y');
     }
 
     public function getShortDate(\DateTime $dateTime)
