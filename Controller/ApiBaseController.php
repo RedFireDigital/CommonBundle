@@ -14,6 +14,18 @@ class ApiBaseController extends BaseController
         return $this->throwBadError($data, 404);
     }
     
+    public function getJsonErrorAPIRepsonse($msg)
+    {
+        $response = new Response();
+        $response->headers->set('Content-Type', 'application/json');
+
+        $data = [
+            'error' => $msg
+        ];
+
+        return $this->throwBadError($data, 400);
+    }
+    
     public function getJsonStatusResponse($status, $msg = null)
     {
         return $this->getResponse(

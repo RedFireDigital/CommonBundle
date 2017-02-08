@@ -7,7 +7,7 @@
  * User:    gra
  * Date:    08/12/16
  * Time:    11:28
- * Project: fruitful-property-investments
+ * Project: PartFire MangoPay Bundle
  * File:    BurnOutput.php
  *
  **/

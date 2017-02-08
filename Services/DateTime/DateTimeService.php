@@ -7,7 +7,7 @@
  * User:    gra
  * Date:    30/12/16
  * Time:    23:50
- * Project: fruitful-property-investments
+ * Project: PartFire MangoPay Bundle
  * File:    DateTimeService.php
  *
  **/

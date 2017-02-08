@@ -8,7 +8,7 @@
  * User:    gra
  * Date:    08/12/16
  * Time:    10:37
- * Project: fruitful-property-investments
+ * Project: PartFire MangoPay Bundle
  * File:    CommonOutputInterface.php
  *
  **/

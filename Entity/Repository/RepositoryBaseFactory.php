@@ -7,7 +7,7 @@
  * User:    gra
  * Date:    28/11/16
  * Time:    12:37
- * Project: fruitful-property-investments
+ * Project: PartFire MangoPay Bundle
  * File:    RepositoryBaseFactory.php
  *
  **/
