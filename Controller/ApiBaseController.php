@@ -3,6 +3,7 @@
 namespace PartFire\CommonBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class ApiBaseController extends BaseController
 {
@@ -18,12 +19,7 @@ class ApiBaseController extends BaseController
     {
         $response = new Response();
         $response->headers->set('Content-Type', 'application/json');
-
-        $data = [
-            'error' => $msg
-        ];
-
-        return $this->throwBadError($data, 400);
+        return $this->throwBadError($msg, 400);
     }
     
     public function getJsonStatusResponse($status, $msg = null)
