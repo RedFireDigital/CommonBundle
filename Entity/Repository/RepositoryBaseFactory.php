@@ -57,6 +57,22 @@ class RepositoryBaseFactory implements Repository
             throw new \Exception($e->getMessage());
         }
     }
+
+    public function create($name, $arguments)
+    {
+        try {
+            try {
+                $repo = $this->em->getRepository($this->getBundleName() . ':' . $name);
+            } catch (\Exception $e) {
+                throw new \ErrorException('Can not find repo ' .$name . ' in bundle ' . $this->getBundleName() . ' ( ' . $this->getBundleName() . ':' . $name . ' ) on ' . get_class($this) . " --> " . $e->getMessage());
+            }
+
+
+            return $repo;
+        } catch (\Exception $e) {
+            throw new \Exception($e->getMessage());
+        }
+    }
     
     /**
      *
