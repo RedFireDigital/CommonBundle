@@ -44,4 +44,14 @@ class ApiBaseController extends BaseController
     {
         return $this->getResponse($data);
     }
+    
+    public function getJSonResponseWrappedUp(array $data, bool $status = true)
+    {
+        $returnData = [
+            'status'    => $status,
+            'data'      => $data
+        ];
+
+        return $this->getJsonResponse($returnData);
+    }
 }
