@@ -70,20 +70,6 @@ class CommonBaseEntity
         $this->hash = $this->getHashValue(80);
     }
 
-    public function __call($method, $arguments)
-    {
-        if (preg_match('/^(get|is|has)([A-Z].*)$/', $method, $matches)) {
-            return $this->{lcfirst($matches[2])};
-        } elseif (preg_match('/^(set)([A-Z].*)$/', $method, $matches)) {
-            $this->{lcfirst($matches[2])} = $arguments[0];
-            return;
-        }
-        throw new \Exception(sprintf(
-            'Method does not exist for class "%s" - ' . $method .'',
-            get_class($this)
-        ));
-    }
-
     public function createFromArray($data)
     {
         foreach ($data as $item => $value) {
