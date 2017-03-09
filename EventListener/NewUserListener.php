@@ -39,11 +39,13 @@ class NewUserListener
 
     private function setIPAddress(IPAddressable $iPAddressable, Request $request)
     {
-        $iPAddressable->setIPAddress($this->getIp($request));
+        $getIp = $this->getIp($request);
+        $ip = (is_null($getIp)) ? "NO-IP-ADDRESS" : $getIp;
+        $iPAddressable->setIPAddress($ip);
         $this->saveEntity($iPAddressable);
     }
 
-    private function getIp(Request $request) : string
+    private function getIp(Request $request) : ?string
     {
         return $request->getClientIp();
     }
