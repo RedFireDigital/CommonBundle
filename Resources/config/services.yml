@@ -21,3 +21,9 @@ services:
     partfire_common.date_time_service:
         class: PartFire\CommonBundle\Services\DateTime\DateTimeService
         arguments: ['@partfire_common.time_ago']
+
+    partfire_common.new_user_events_service:
+        class: PartFire\CommonBundle\EventListener\NewUserListener
+        arguments: ['@partfire_common.repo']
+        tags:
+              - { name: kernel.event_listener, event: fos_user.registration.completed, method: onCreateUserSetIPAddress }
