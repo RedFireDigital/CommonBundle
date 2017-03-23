@@ -14,7 +14,7 @@ namespace PartFire\CommonBundle\Entity\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
-class CountryRepository extends RepositoryBaseFactory
+class CountryRepository extends RepositoryAbstract
 {
 
 }
