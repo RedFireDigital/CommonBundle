@@ -64,7 +64,7 @@ class RepositoryBaseFactory implements Repository
             try {
                 $repo = $this->em->getRepository($this->getBundleName() . ':' . $name);
             } catch (\Exception $e) {
-                throw new \ErrorException('Can not find repo ' .$name . ' in bundle ' . $this->getBundleName() . ' ( ' . $this->getBundleName() . ':' . $name . ' ) on ' . get_class($this) . " --> " . $e->getMessage());
+                throw new \ErrorException('Can not find repo name ' .$name . ' in bundle ' . $this->getBundleName() . ' ( ' . $this->getBundleName() . ':' . $name . ' ) on ' . get_class($this) . " --> " . $e->getMessage());
             }
 
 
