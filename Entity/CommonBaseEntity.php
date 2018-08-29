@@ -68,6 +68,8 @@ class CommonBaseEntity
     public function __construct()
     {
         $this->hash = $this->getHashValue(80);
+        $this->createdDate = new \DateTime();
+        $this->updatedDate = new \DateTime();
     }
 
     public function createFromArray($data)
