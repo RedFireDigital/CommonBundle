@@ -30,7 +30,7 @@ class Country extends CommonBaseEntity
 {
     /**
      * @ORM\Column(name="country_name",type="string", length=255, unique=true, nullable=false);
-     *
+     * @Expose
      */
 
     protected $countryName;
@@ -51,28 +51,26 @@ class Country extends CommonBaseEntity
 
     /**
      * @ORM\Column(name="sub_type",type="string", length=255, unique=false, nullable=false);
-     *
+     * @Expose
      */
 
     protected $subType;
 
     /**
      * @ORM\Column(name="sovereignty",type="string", length=255, unique=false, nullable=false);
-     *
      */
 
     protected $sovereignty;
 
     /**
      * @ORM\Column(name="capital",type="string", length=255, unique=false, nullable=false);
-     *
      */
 
     protected $capital;
 
     /**
      * @ORM\Column(name="iso_4217_currency_code",type="string", length=255, unique=false, nullable=false);
-     *
+     * @Expose
      */
 
     protected $iso4217CurrencyCode;
@@ -94,7 +92,7 @@ class Country extends CommonBaseEntity
 
     /**
      * @ORM\Column(name="iso_3166_2_letter",type="string", length=255, unique=false, nullable=false);
-     *
+     * @Expose
      */
 
     protected $iso31662Letter;
