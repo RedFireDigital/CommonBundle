@@ -84,7 +84,7 @@ class Country extends CommonBaseEntity
 
     /**
      * @ORM\Column(name="itu_telephone_code",type="string", length=255, unique=false, nullable=false);
-     *
+     * @Expose
      */
 
     protected $ituTelephoneCode;
