@@ -47,7 +47,6 @@ class Country extends CommonBaseEntity
 
     /**
      * @ORM\Column(name="sub_type",type="string", length=255, unique=false, nullable=false);
-     * @Expose
      */
 
     protected $subType;
