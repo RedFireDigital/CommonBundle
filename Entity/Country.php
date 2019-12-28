@@ -15,22 +15,18 @@ use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\MappedSuperclass;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\Common\Collections\ArrayCollection;
-use JMS\Serializer\Annotation\ExclusionPolicy;
-use JMS\Serializer\Annotation\Expose;
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="partfire_country", indexes={
  *  @ORM\Index(name="index_enabled", columns={"enabled", "deleted"}) })
  * @ORM\Entity(repositoryClass="PartFire\CommonBundle\Entity\Repository\CountryRepository")
- * @ExclusionPolicy("all")
  */
 
 class Country extends CommonBaseEntity
 {
     /**
      * @ORM\Column(name="country_name",type="string", length=255, unique=true, nullable=false);
-     * @Expose
      */
 
     protected $countryName;
@@ -70,7 +66,6 @@ class Country extends CommonBaseEntity
 
     /**
      * @ORM\Column(name="iso_4217_currency_code",type="string", length=255, unique=false, nullable=false);
-     * @Expose
      */
 
     protected $iso4217CurrencyCode;
@@ -84,7 +79,6 @@ class Country extends CommonBaseEntity
 
     /**
      * @ORM\Column(name="itu_telephone_code",type="string", length=255, unique=false, nullable=false);
-     * @Expose
      */
 
     protected $ituTelephoneCode;
@@ -92,7 +86,6 @@ class Country extends CommonBaseEntity
 
     /**
      * @ORM\Column(name="iso_3166_2_letter",type="string", length=255, unique=false, nullable=false);
-     * @Expose
      */
 
     protected $iso31662Letter;
