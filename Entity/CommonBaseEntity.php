@@ -14,14 +14,11 @@ namespace PartFire\CommonBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\Common\Collections\ArrayCollection;
-use JMS\Serializer\Annotation\ExclusionPolicy;
-use JMS\Serializer\Annotation\Expose;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\HasLifecycleCallbacks
  * @ORM\MappedSuperclass
- * @ExclusionPolicy("all")
  */
 
 class CommonBaseEntity
@@ -30,7 +27,6 @@ class CommonBaseEntity
      * @ORM\Id
      * @ORM\Column(type="integer", options={"comment" = "Unique identifier"})
      * @ORM\GeneratedValue(strategy="AUTO")
-     * @Expose
      */
     protected $id;
 
