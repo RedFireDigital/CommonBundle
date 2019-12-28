@@ -1,21 +1,21 @@
 {
-    "name": "redfiredigital/common-bundle",
+    "name": "partfire/common-bundle",
     "description": "A collection of Base and Abstract classes etc used to speed up development.",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Carl Owens",
-            "email": "carl@redfiredigital.uk",
-            "homepage": "https://redfiredigital.uk"
+            "email": "carl@partfire.co.uk",
+            "homepage": "https://partfire.co.uk"
         },
         {
             "name": "Graham Owens",
-            "email": "gra@redfiredigital.uk",
-            "homepage": "https://redfiredigital.uk"
+            "email": "gra@partfire.co.uk",
+            "homepage": "https://partfire.co.uk"
         },
         {
-            "name": "RedFire Digital",
+            "name": "PartFire Ltd",
             "homepage": "https://github.com/PartFire"
         }
     ],
@@ -29,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RedFireDigital\\CommonBundle\\": ""
+            "PartFire\\CommonBundle\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/",
@@ -38,8 +38,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "RedFireDigital\\CommonBundle\\Tests\\": "Tests/",
-            "RedFireDigital\\CommonBundle\\spec\\": "spec/"
+            "PartFire\\CommonBundle\\Tests\\": "Tests/",
+            "PartFire\\CommonBundle\\spec\\": "spec/"
         }
     },
     "minimum-stability": "dev",
